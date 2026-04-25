@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CRC Beginnings | Center for Research and Communication</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e9e5dd;  /* warm paper-like background */
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.55;
+            color: #2c2418;
+            padding: 2rem 1rem;
+        }
+
+        .document-wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #fffef7;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            padding: 2.5rem 2rem 3.5rem;
+        }
+
+        /* typography matching scholarly memoir */
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: -0.3px;
+            font-weight: 600;
+            color: #1e3a3a;
+            border-left: 6px solid #b8860b;
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Palatino', 'Georgia', serif;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #5a4a32;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd2bd;
+            padding-bottom: 0.75rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            color: #2c553c;
+            letter-spacing: -0.2px;
+            border-bottom: 1px solid #d4c9b5;
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            font-weight: 500;
+            margin: 1.8rem 0 0.6rem 0;
+            color: #3e5a3a;
+        }
+
+        .byline-note {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7f6b4a;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder {
+            margin: 1.8rem 0 1.8rem 0;
+            text-align: center;
+            background: #f4f0e8;
+            border: 1px solid #e0d6c6;
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-caption {
+            font-size: 0.8rem;
+            color: #6b5a44;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        .inline-img-symbol {
+            max-width: 100%;
+            background: #e8e0d0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 0.3rem 0.8rem;
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        blockquote {
+            margin: 1.2rem 0;
+            padding-left: 1.2rem;
+            border-left: 4px solid #c0a86a;
+            color: #3e3a30;
+            font-style: normal;
+            background: #faf7f0;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0 16px 16px 0;
+        }
+
+        .highlight-list {
+            background: #fef7e0;
+            padding: 0.2rem 1rem 0.5rem 2rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+
+        li {
+            margin: 0.3rem 0;
+        }
+
+        .signature-moment {
+            background: #f2ede2;
+            padding: 1rem 1.6rem;
+            border-radius: 24px;
+            margin: 1.4rem 0;
+            font-size: 0.98rem;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #e2d8c8, transparent);
+            margin: 1.8rem 0;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.75rem;
+            text-align: center;
+            color: #9b8a6e;
+            border-top: 1px solid #e2d6c4;
+            padding-top: 1.2rem;
+        }
+
+        @media (max-width: 650px) {
+            .document-wrapper {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .dropcap:first-letter {
+            font-size: 3.2rem;
+            font-weight: bold;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.4rem;
+            color: #7c5f3a;
+        }
+
+        /* chandelier & nostalgic feel */
+        .chandelier-note {
+            font-weight: 500;
+            background: #fff2e0;
+            border-radius: 40px;
+            padding: 0.2rem 0.9rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="document-wrapper">
+    <div class="byline-note">CENTER FOR RESEARCH AND COMMUNICATION — HISTORICAL MEMOIR</div>
+    <h1>CRC Beginnings</h1>
+    <div class="subhead">From a small research hub to the foundations of the University of Asia and the Pacific</div>
+    
+    <p><em>Excerpts from:</em><br>
+    <strong>De Pedro, Javier; Memoirs of the Beginnings of Opus Dei in the Philippines (2025)</strong></p>
+
+    <!-- A BUILDING FOR CRC -->
+    <h2>A Building for CRC</h2>
+    
+    <!-- Original building photograph -->
+<div class="image-placeholder">
+    <img src="bocobo.png" alt="Neoclassical Mediterranean façade of the CRC building in Malate" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+    <div class="image-caption">The pre-war structure on Jorge Bocobo Street, Malate — designed by a renowned architect, featuring a neoclassical Mediterranean façade and grand mahogany-paneled interiors. (<em>CRC archives</em>)</div>
+</div>
+    
+    <p>After a brief trial period offering economic research services to clients, Jess and Bernie launched into the far more ambitious endeavor of establishing a graduate school that would grant a master's degree in industrial economics. However, under the education laws at the time, institutions were not allowed to offer graduate degrees unless they also ran undergraduate programs — and typically, even a secondary school as well.</p>
+    
+    <p>We were neither in a position to do so, nor inclined to meet such extensive requirements. But Jess and Bernie, well attuned to the local culture, understood that where there is good reason, flexibility often prevails over strict adherence to the law. Given the experimental nature of the initiative, they applied for an exemption from the Department of Education. It was granted on condition that we could show a proper curriculum and method of instruction. In other words, we had official permission — but everything else remained to be done. We needed professors and students, a location, funding, and, above all, a way to present this novel idea to the sectors of society that might be open to it.</p>
+    
+    <p>Rolly Sto. Domingo came across a newspaper ad for a building that looked promising, and we went to see it. It was a pre-war structure in Malate, not far from our center on Florida Street. Designed by a well-known architect, it had a neoclassical Mediterranean façade and interiors that reflected the refined taste of the period: a grand mahogany-paneled living room with a central Bohemian crystal chandelier, tropical hardwood floors, and a sweeping staircase leading to the upper level. Some rooms showed signs of age and neglect, but to us the place seemed heaven-sent.</p>
+    
+    <p>With the help of Jess and Bernie, I drafted a renovation plan. The dining room would be converted into a lecture hall; the top floor would hold a library with room for about three thousand volumes, mostly on legal and economic topics and individual workstations for students. The kitchen would become an archive and statistics center. Administrative offices would be installed, and the entrance and living room adapted to receive guests, host informal meetings, and foster personal conversations. Our ever-reliable carpenter, Andoy brought these ideas to life, while Fr. Joe and I scoured the city for furniture and decorations to make the place more welcoming. The Don Bosco School's carpentry workshop built us custom U-shaped, tiered desk for sixteen people, along with upholstered armchairs to match. The old kitchen, with some modifications, served well as our statistical archive.</p>
+    
+    <p>We didn't have the 3,000-volume library required by law for graduate programs — but thanks to Tess and Bernie's personal book collections, the National Productivity Commission manuals I had brought from Spain, and a generous loan from Placido Mapa, we came close enough. In any case, no one actually counted.</p>
+    
+    <!-- A NIGHT WORTH REMEMBERING -->
+    <h2>A Night Worth Remembering</h2>
+    
+    <p>The official inauguration of the new institution was scheduled for August 15, 1968 — four years after the first members of the Work had arrived in the Philippines. It was timed to coincide with a congress of business journalists from across Southeast Asia. By midday on August 14, Andoy had finished his part of the work. But the place still needed a deep cleaning. With help from students who frequented Maynilad, we all spent the entire day cleaning, scrubbing, and polishing. To polish the floors we followed the traditional method of stepping on coconut husks to spread and rub the floor wax. It was backbreaking. Jess and the two priests took on the long corridor upstairs — Jess working diligently, the priests at a more relaxed pace. When we finally paused for a light supper at Maynilad, Fr. Joe asked Pete to say grace. Half-asleep, Pete began, "Bless me, Father, for I have sinned..." — the usual start of a confession.</p>
+    
+    <p>Eduardo Vaca, a cooperator with a big heart who ran a company that installed air-conditioning systems, had promised to donate and install the units we needed once renovations were complete. At 11:00 p.m., the units were in place — but they refused to start, and the workers wanted to go home and rest. This posed a serious problem. The windows could not be opened because we had them sealed to preserve the wood paneled walls, and a large group of local and international journalists was due at 8:00 a.m. the next morning. Tension ran high, but after explaining the situation, the goodwill of the technicians prevailed, and in the early hours of the morning they resolved the issue and finally headed home.</p>
+        
+    <p>One unexpected challenge came from a well-meaning college student in the Work of St. Raphael. Around midnight, he noticed the grand crystal chandelier had years of accumulated grime. Without asking, he climbed a ladder and began removing the crystal drops one by one to clean them. By 1:00 a.m., they sparkled — but we had no idea how to reassemble them. In the end, we had a few pieces left over, but the chandelier gleamed as if brand new. By 5:00 a.m., the building looked spotless and ready.</p>
+    
+    <p>Bernie and Jess had gone to bed, needing rest before the three-day event. The rest of us, exhausted and barely able to think, stumbled home to prepare for the feast of the Assumption. The congress itself was a great success, widely reported in the local press, and proved an excellent opportunity to make new friends and supporters.</p>
+    
+    <p>And where did we get the money to do all this? The project seemed impossible to carry out with anything less than 20,000 pesos — then equivalent to USD 5,000 — and we didn't have a fraction of that. Much of the funding came through the Jaycees, a group of young professionals and civic leaders, among whom Javier Calero was a leading figure. They organized a successful fundraising dinner at the newly opened Manila Hilton Hotel presided over by no less than the President of the Republic. Thanks to Javier Calero, Joe Romero, Eduardo Vaca, and Placido Mapa — not to mention the vision, hard work, and generosity of Bernie and Jess — we laid the foundations of what would one day become the University of Asia and the Pacific.</p>
+    
+    <!-- THE MASTER'S PROGRAM IN INDUSTRIAL ECONOMICS -->
+    <h2>The Master's Program in Industrial Economics</h2>
+    
+    <p>By August 1968, the headquarters of the Center for Research and Communication (CRC) had been inaugurated on Jorge Bocobo Street. At the start of the 1969 academic year, CRC launched its Master's program in Industrial Economics. Getting the program off the ground presented several challenges. One of the biggest was the lack of reliable economic data. What little data existed was often outdated or incomplete and no comprehensive economic history of the country had been written. We needed a central hub where the statistics that Bernie and Jess were gathering from scattered sources could be compiled and analyzed. So we converted the old kitchen of the house into an Economic Information Center and waited for qualified people to help organize the material and make it useful. The solution came from the region of the United States in the person of Robert Paluzska, a numerary member. Bob was a Polish American economist who had served in the Marines, the assault troops of the US Navy. Upon his arrival, Bob began managing the Economic Information Center.</p>
+    
+    <p>Our next goal was to find the right faculty team. Aside from Robert, we had the help of Bob Atmosfera, a friend who assisted with mathematics, statistics and econometrics. I contributed in the areas of socioeconomics, Catholic social doctrine, and productivity measurement — fields I was familiar with. The faculty was complete, with Bernie and Jess at the helm.</p>
+    
+    <p>Among the first staff members trained through the program were Victor Abola, Buddy Magturo, Dondon Paderanga (who would later serve in the Cabinet as Director General of the National Economic Development Authority), Rolly Sto. Domingo, Clem Escaño, Romy Borja, Temi Padla, and Danny Venida. Over the years, many of them went on to make important contributions to the Philippine economy, whether in public service or the private sector.</p>
+    
+    <p>The program was designed as a two-year, full-time course with features unlike anything previously offered in the country — not for novelty's sake, but to address real needs that Bernie and Jess had identified. Students received full scholarships and modest living stipend, but given our limited funds, they were expected to earn their keep by producing marketable research. Bernie and Jess were not interested in speculative or abstract economic studies of little relevance to the nation's current state. Their goal was to deliver practical, applicable knowledge in microeconomics, with a focus on the industrial and agricultural development of the country's regions.</p>
+    
+    <p>The following year, the incoming group was even larger, and we quickly reached the limits of our physical space. Some of the graduates from that era — such as Dr. Rolly Dy, Alex Hao, Tom Aquino, Philip Nery, and Emil Antonio — went on to become national figures in their respective fields and had always been identified with CRC. Emil and Rolly have since gone ahead of us to heaven.</p>
+    
+    <p>We must also remember the ever-amiable Joe McPherson, a Harvard graduate who came to the Philippines after asking for admission as a supernumerary. He worked tirelessly at CRC, made many friends, and thoroughly enjoyed his time with us. The patriarch of a large family, he later returned to Washington, DC, where he devoted his professional life to an innovative educational project called The Heights, a school for boys. He passed away recently.</p>
+    
+    <p>CRC quickly earned a reputation for excellence and was warmly received by many in the business community. It made a real contribution to the country's economic and social development and was mentioned in several international publications as a trusted think tank. But the full story of its evolution — from these modest beginnings to its eventual transformation into the University of Asia and the Pacific — is beyond the scope of this book.</p>
+    
+    <hr />
+    
+    <footer>
+        <span>✦ Center for Research and Communication — Beginnings (1965–1969) ✦</span><br>
+        Based on the memoirs of Javier De Pedro, 2025. Digitally preserved from original manuscript.
+    </footer>
+</div>
+</body>
+</html>
