@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Aarne Dimanlig, Ph.D. – Executive Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #eef2f5 0%, #e0e6ed 100%);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Times New Roman', Times, serif;
+            line-height: 1.45;
+            color: #1A2C3E;
+            padding: 2rem 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume {
+            max-width: 1180px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* inner padding */
+        .resume-inner {
+            padding: 2.2rem 2.8rem;
+        }
+
+        /* header / name + contacts – refined */
+        .name-block {
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #1E4668;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .name-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #0B2B42 0%, #1F4E6E 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.2rem;
+            font-family: 'Inter', 'Times New Roman', serif;
+        }
+
+        .name-title p {
+            font-size: 0.9rem;
+            color: #3E6A8C;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.8rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            background: #F8FAFE;
+            padding: 0.6rem 1rem;
+            border-radius: 60px;
+            margin-top: 0.5rem;
+        }
+
+        .contact-bar span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #1F4970;
+        }
+
+        .contact-bar a {
+            color: #1F4970;
+            text-decoration: none;
+            border-bottom: 1px dotted #9AB3CF;
+        }
+
+        .contact-bar a:hover {
+            color: #0E3A5F;
+            border-bottom: 1px solid #1F4970;
+        }
+
+        /* section headings – modern but classic */
+        .section-head {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 1.8rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #C9D9E9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #1C4E70;
+            display: inline-block;
+            width: auto;
+        }
+
+        /* org titles */
+        .exp-org {
+            font-size: 1.22rem;
+            font-weight: 700;
+            margin-top: 1.3rem;
+            margin-bottom: 0.2rem;
+            color: #1A3E5C;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .exp-org small {
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: #4F6F8F;
+            margin-left: 0.5rem;
+        }
+
+        .exp-org a {
+            color: #2B6A9F;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .exp-org a:hover {
+            text-decoration: underline;
+        }
+
+        .subhead {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin: 0.4rem 0 0.2rem 0;
+            color: #2A577B;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .dates {
+            font-weight: 500;
+            color: #6883A0;
+            font-size: 0.85rem;
+            background: #F0F4F9;
+            padding: 0.1rem 0.6rem;
+            border-radius: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        .description {
+            margin: 0.25rem 0 0.5rem 1rem;
+            font-size: 0.96rem;
+            line-height: 1.45;
+            color: #2C3F55;
+        }
+
+        .description ul {
+            margin: 0.3rem 0 0.5rem 1.5rem;
+            list-style-type: disc;
+        }
+
+        .description li {
+            margin-bottom: 0.2rem;
+        }
+
+        .compact-list {
+            list-style-type: none;
+            margin: 0.3rem 0 0.8rem 0.2rem;
+        }
+
+        .compact-list li {
+            margin-bottom: 0.45rem;
+            position: relative;
+            padding-left: 1.6rem;
+            font-size: 0.95rem;
+        }
+
+        .compact-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0.2rem;
+            color: #2E6A9E;
+            font-weight: bold;
+        }
+
+        .paper-item {
+            margin: 0.3rem 0 0.3rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* two column writings */
+        .columns-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .publication-block {
+            margin: 0.2rem 0 0.8rem 0;
+        }
+
+        .publication-block p {
+            margin: 0.35rem 0;
+            font-size: 0.92rem;
+            line-height: 1.4;
+        }
+
+        .publication-block strong {
+            color: #1F4A6E;
+        }
+
+        /* subtle card style for academia & consultancies */
+        .grey-card {
+            background: #F9FBFE;
+            padding: 0.7rem 1rem;
+            border-radius: 20px;
+            margin: 0.8rem 0 0.5rem 0;
+            border: 1px solid #E9EFF4;
+        }
+
+        .inline-meta {
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: #4F6A85;
+        }
+
+        hr {
+            margin: 0.7rem 0;
+            border: none;
+            border-top: 1px solid #E2E8F0;
+        }
+
+        /* bpi sub-lines */
+        .role-sub {
+            margin-left: 1.2rem;
+            font-weight: 500;
+            margin-top: 0.1rem;
+            font-size: 0.95rem;
+            color: #365f7e;
+        }
+
+        /* version footer */
+        .version-footer {
+            margin-top: 2rem;
+            font-size: 0.7rem;
+            color: #8CA3BC;
+            border-top: 1px solid #E2E9F2;
+            padding-top: 0.8rem;
+            text-align: right;
+            font-family: monospace;
+        }
+
+        @media (max-width: 780px) {
+            .resume-inner { padding: 1.5rem; }
+            .columns-2 { grid-template-columns: 1fr; gap: 0.8rem; }
+            .contact-bar { flex-direction: column; align-items: flex-start; border-radius: 24px; width: 100%; }
+            .name-block { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .subhead { flex-direction: column; align-items: flex-start; gap: 6px; }
+            .exp-org { flex-direction: column; gap: 4px; }
+        }
+
+        /* subtle accessibility */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #2470a0;
+            outline-offset: 2px;
+        }
+
+        .badge-light {
+            font-size: 0.75rem;
+            background: #EAF3FC;
+            border-radius: 20px;
+            padding: 0.1rem 0.65rem;
+            display: inline-block;
+            margin-left: 0.5rem;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="resume-inner">
+            <!-- header with modern split -->
+            <div class="name-block">
+                <div class="name-title">
+                    <h1>AARNE DIMANLIG, Ph.D.</h1>
+                    <p>Multilateral Finance Executive | Corporate Governance & Risk Management Leader</p>
+                </div>
+                <div class="contact-bar">
+                    <span>📞 +63.917.855.0762</span>
+                    <span>✉️ <a href="mailto:aarnedimanlig@google.com">aarnedimanlig@google.com</a></span>
+                    <span>🔗 <a href="https://www.linkedin.com/in/aarne-dimanlig" target="_blank" rel="noopener noreferrer">linkedin.com/in/aarne-dimanlig</a></span>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="section-head">Experience</div>
+
+            <!-- CGIF -->
+            <div class="exp-org">
+                CREDIT GUARANTEE AND INVESTMENT FACILITY (est. 2011)
+                <small><a href="https://www.cgif-abmi.org" target="_blank" rel="noopener noreferrer">www.cgif-abmi.org</a></small>
+            </div>
+            <div class="description" style="margin-top:0; font-style:normal; background:#F5F9FF; padding:0.3rem 0.8rem; border-radius:14px; margin-bottom:0.4rem;">
+                🏛️ CGIF, a trust fund of the Asian Development Bank, is a corporate bond guarantor owned by the ADB, China, Japan, Korea, and the ASEAN; a project of the Asian Bond Market Initiative (ABMI).
+            </div>
+            
+            <div class="subhead">Chief Credit Risk Officer <span class="dates">2026–present</span></div>
+            <div class="subhead">Acting Chief Risk Officer <span class="dates">2025–2026</span></div>
+            <div class="subhead">Chief Credit Risk Officer <span class="dates">2019–2025</span></div>
+            <div class="subhead">Chief Risk Officer (founding executive) <span class="dates">2011–2019</span></div>
+
+            <div class="description">
+                Member, Executive Committee. Chair, Guarantee and Investment Committee. Executive responsibility for enterprise risk management. Supervises CGIF’s risk management department / credit risk group. Oversight on all risk dimensions — credit risk, capital adequacy risk, market risk, operational risk. Reviewed over USD 5.0 billion credit guarantee proposals. Oversees credit review of bond issuers, portfolio monitoring, and rating agency relationships.
+            </div>
+
+            <!-- BPI -->
+            <div class="exp-org">BANK OF THE PHILIPPINE ISLANDS</div>
+            <div class="subhead">Vice President <span class="dates">2006–2011</span></div>
+            <div class="role-sub">Head, Market Risk Management Unit & Credit Systems Validation Unit, Risk Management Office</div>
+            <div class="description">
+                Developed and maintained market risk, liquidity risk, IRRBB models. Supervised market risk management and credit systems validation. Member of Capital Management Committee & ICAAP team. Validated corporate credit risk rating and modeling system. Reported to CRO and Board Risk Committee.
+            </div>
+
+            <!-- BPI Capital -->
+            <div class="exp-org">BPI CAPITAL CORPORATION</div>
+            <div class="subhead">Assistant Vice President, Corporate Finance <span class="dates">1995–2006</span></div>
+            <div class="description">
+                Investment banking: financial advisory, debt/equity syndication, structured finance, M&A, project finance, new product development.
+            </div>
+            
+            <!-- Columbia / IMF / UCSB / CRC / UP Math (consistent grouping)-->
+            <div class="exp-org">COLUMBIA UNIVERSITY, GRADUATE SCHOOL OF BUSINESS</div>
+            <div class="subhead">Visiting Assistant Professor of Finance <span class="dates">1994–1995</span></div>
+
+            <div class="exp-org">INTERNATIONAL MONETARY FUND, WASHINGTON, D.C.</div>
+            <div class="subhead">Consultant, World Economics Studies Division, Research Dept <span class="dates">1993–1994</span></div>
+
+            <div class="exp-org">UNIVERSITY OF CALIFORNIA, SANTA BARBARA</div>
+            <div class="subhead">Lecturer of Economics, Teaching & Research Assistant <span class="dates">1987–1993</span></div>
+
+            <div class="exp-org">CENTER FOR RESEARCH & COMMUNICATION / UNIVERSITY OF ASIA & THE PACIFIC</div>
+            <div class="subhead">Macroeconomist and Lecturer of Economics <span class="dates">1980–1987</span></div>
+
+            <div class="exp-org">MATHEMATICS DEPARTMENT, UNIVERSITY OF THE PHILIPPINES</div>
+            <div class="subhead">Lecturer of Mathematics <span class="dates">1978–1980</span></div>
+
+            <!-- ACADEMIA AND CONSULTANCIES -->
+            <div class="section-head">Academia & Consultancies</div>
+            <div class="grey-card">
+                <div class="subhead" style="margin-top:0;">1998–2011: Seminars, Workshops & Advisory Roles</div>
+                <div class="description">
+                    Organized conferences sponsored by PECC, ISEAS, ADB-ADBI, World Economic Forum, Japan MoF, OECD. Lectured at DLSU (MS Computational Finance), University of Asia and the Pacific (Financial Derivatives), BPI Financial Advisory Training Program. Extensive engagement on capital markets development and corporate governance reforms in Asia.
+                </div>
+            </div>
+
+            <!-- EDUCATION AND TRAINING -->
+            <div class="section-head">Education & Executive Training</div>
+            <ul class="compact-list">
+                <li>University of California, Santa Barbara – Ph.D., Economics (Finance Concentration), 1995 · UC Regents Fellow</li>
+                <li>Center for Research and Communication – M.S., Industrial Economics, 1983 · Asia Foundation Scholar</li>
+                <li>University of the Philippines – B.S., Mathematics, 1977</li>
+                <li>Institute of Corporate Directors – Professional Directors Program, 2023</li>
+                <li>Harvard Business School – BPI Leadership Excellence Acceleration Program (LEAP), 2010</li>
+                <li>National Computer Institute (Manila) – Certificates, 1979</li>
+                <li>Advanced seminars: credit risk, market risk, operational risk, ESG, project finance, securitization, ICAAP, stress-testing.</li>
+            </ul>
+
+            <!-- WRITINGS improved layout -->
+            <div class="section-head">Selected Writings & Research</div>
+            <div class="columns-2">
+                <!-- left column: consultancies & research assistantships -->
+                <div>
+                    <div class="subhead" style="margin-top:0; font-size:1rem;">Consultancy & Institutional Reports</div>
+                    <div class="publication-block">
+                        <p>📘 <em>Report on the PECC Peer Assistance and Review Network</em>, World Bank & ADB Planning Meeting on Corporate Governance, 2000 (Editor: A. Dimanlig)</p>
+                        <p>📗 <em>Working with Peers for Financial Reforms in East Asia</em>, 1999, PECC (Editor & Executive Summary: A. Dimanlig)</p>
+                        <p>📙 <a href="#" style="text-decoration:none; color:#1F6E9F;">“MoF (Japan)-OECD-ADBI Seminar on Securities Market Regulation Executive Summary”</a> 1998, ADBI (downloadable)</p>
+                    </div>
+
+                    <div class="subhead" style="margin-top:1rem; font-size:1rem;">Research Assistantships (IMF & UCSB)</div>
+                    <div class="publication-block">
+                        <p><strong>International Monetary Fund:</strong> Coe, D.T. & Helpman, E. (1994) <em>“International R&D Spillovers,”</em> IMF Staff Papers / European Economic Review.<br>
+                        Feldman, R.A. (1995) <em>“Measures of External Competitiveness for Germany,”</em> IMF Staff Papers.</p>
+                        <p><strong>UC Santa Barbara:</strong> LeRoy, S.F. (1989) <em>“Efficient Capital Markets and Martingales,”</em> JEL.<br>
+                        Sengupta, J.K. (1991) <em>“Rapid Growth in NICs in Asia,”</em> Kyklos 44(4), 561-579.</p>
+                    </div>
+                </div>
+                <!-- right column: academia -->
+                <div>
+                    <div class="subhead" style="margin-top:0; font-size:1rem;">Academic Publications & Working Papers</div>
+                    <div class="publication-block">
+                        <p><strong>Doctoral Dissertation (UCSB):</strong> <em>“Essays on Financial Economics,”</em> 1995.</p>
+                        <p>• <em>“Asset Valuation in a Small Open Economy,”</em> 1994.<br>
+                        • <em>“Asset Valuation in a Stochastic Neoclassical Model with Depreciation & Adjustment Costs,”</em> 1993.<br>
+                        • <em>“Modeling Stock Returns as a Weibull Distribution and the Failure Rate of Stock Returns,”</em> 1992.<br>
+                        • <em>“Towards a Theory for Limit Orders and Market Orders,”</em> 1991.</p>
+                    </div>
+                    <div class="publication-block" style="margin-top:0.5rem;">
+                        <p><strong>Center for Research & Communication (UA&amp;P):</strong></p>
+                        <p>Dimanlig, A.B., Trinidad, F., Andal, S. <em>“The Economy Recovers (But Don't Uncross Your Fingers Yet!)”</em> in <em>The Economic Recovery: Fact or Fancy?</em>, July 1987.<br>
+                        Dimanlig, A.B. <em>“Real Interest Rates Are Attractively High; So, How Come Savers Aren't Biting?”</em> Recent Economic Indicators, Oct 1986.<br>
+                        <em>“The Philippine Appliance Manufacturing Industry,”</em> 1982, master’s thesis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Functional competencies note (added subtly but no substance removed) -->
+            <div style="margin-top: 1.4rem; background: #F1F6FD; border-radius: 24px; padding: 0.6rem 1.2rem; font-size: 0.85rem; color: #2C577C; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center;">
+                <span>🎯 <strong>Core competencies</strong> · Corporate Governance · Corporate/Project Finance · Financial/Asset Valuation · Credit/Market/Capital/Liquidity Risk · Industrial & Macroeconomics · Quantitative Analytics (Econometrics/Statistics)</span>
+                <span style="font-size:0.75rem;">⚡ Open to independent directorships & senior executive roles post-retirement (Sept 2026)</span>
+            </div>
+
+            <div class="version-footer">
+                Version 20260426 – Executive profile
+            </div>
+        </div>
+    </div>
+</body>
+</html>
